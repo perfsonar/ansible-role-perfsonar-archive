@@ -21,7 +21,7 @@ Role Variables
 The following variables can/should be defined for your host setup:
 
   - `perfsonar_os_update` defaults to True.  This causes the base OS to be updated.
-  - `perfsonar_bundle` must be set by the inheriting role.
+  - `perfsonar_archive_auth_user` Which user adds ipv4 auth.
   - `perfsonar_archive_auth_ipv4` A list of IPv4 addresses to auth.
   - `perfsonar_release` defaults to release.  "staging" and "nightly" are optional.
 
@@ -33,16 +33,17 @@ Role Tags
 Some tags are used in the role, they are meant to run only or skip part of the process.  The following tags are existing:
 
   - `ps::install` : only install perfSONAR packages and their dependencies
+  - `ps::config` : only config perfSONAR packages
+  - `ps::running` : running tasks
+
 
 Dependencies
 ------------
 
-None.
+ansible-role-perfsonar-installer
 
 Example Playbook
 ----------------
-
-This role is meant to be inherited by other roles.
 
 License
 -------
