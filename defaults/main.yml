@@ -1,0 +1,5 @@
+---
+# defaults file for perfsonar-archive
+
+perfsonar_archive_auth_ipv4: []
+perfsonar_esmond_user: perfsonar
