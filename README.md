@@ -1,7 +1,7 @@
 perfSONAR-archive Ansible role
 ================================
 
-Install and manage a perfSONAR Measurement Archive
+Install and manage a perfSONAR Measurement Archive.
 
 Requirements
 ------------
@@ -25,7 +25,7 @@ The following variables can/should be defined for your host setup:
   - `perfsonar_archive_auth_ipv4` A list of IPv4 addresses to auth.
   - `perfsonar_release` defaults to release.  "staging" and "nightly" are optional.
 
-- Some other variables are defined at the end of `default/main.yml` and in `vars/Debian.yml` and `vars/RedHat.yml` (those contains distro specific settings), but shouldn't need to be altered for a regular install.
+- Some other variables are defined at the end of `default/main.yml` and in `vars/main.yml`, but shouldn't need to be altered for a regular install.
 
 Role Tags
 ---------
