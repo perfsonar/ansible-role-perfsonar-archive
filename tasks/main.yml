@@ -7,5 +7,5 @@
 
 - name: Add authorised IP addresses to esmond
   command: /usr/sbin/esmond_manage add_user_ip_address "{{ perfsonar_archiver_auth_user }}" "{{ item }}"
-  with_items: "{{ perfsonar_archiver_auth_ipv4 | default([]) }}"
+  with_items: "{{ perfsonar_archiver_auth_ipv4_addresses | default([]) }}"
   tags: [ 'ps::config' ]

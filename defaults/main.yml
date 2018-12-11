@@ -1,5 +1,5 @@
 ---
 # defaults file for perfsonar-archive
 
-perfsonar_archive_auth_ipv4: []
+perfsonar_archive_auth_ipv4_addresses: []
 perfsonar_archive_auth_user: perfsonar
