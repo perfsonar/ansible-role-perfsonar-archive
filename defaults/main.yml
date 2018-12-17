@@ -1,5 +1,8 @@
 ---
 # defaults file for perfsonar-archive
 
+# this is a list of ipv4 addresses that will be authorized to write to the db
 perfsonar_archive_auth_ipv4_addresses: []
+
+# uid for authorization entries
 perfsonar_archive_auth_user: perfsonar
