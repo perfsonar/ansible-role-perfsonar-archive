@@ -5,9 +5,10 @@
   tags: [ 'ps::config' ]
   command: /usr/lib/perfsonar/scripts/system_environment/configure_esmond new
 
-- name: Add list of write-access authorised IP addresses to esmond archive
+- name: Manage list of authorised IP addresses to esmond archive
   tags: [ 'ps::config' ]
-  command: >
-    /usr/sbin/esmond_manage add_user_ip_address
-    "{{ perfsonar_archiver_auth_user }}" "{{ item }}"
-  with_items: "{{ perfsonar_archiver_auth_ipv4_addresses | default([]) }}"
+  include_tasks: esmond.yml
+  loop: "{{ perfsonar_archiver_auth_list | default([]) }}"
+  loop control:
+    loop_var: auth
+  when: auth.address | default('') != ''
