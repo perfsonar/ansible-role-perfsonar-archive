@@ -20,10 +20,7 @@ Role Variables
 
 The following variables can/should be defined for your host setup:
 
-  - `perfsonar_os_update` defaults to True.  This causes the base OS to be updated.
-  - `perfsonar_archive_auth_user` Which user adds ipv4 auth.
-  - `perfsonar_archive_auth_ipv4` A list of IPv4 addresses to auth.
-  - `perfsonar_release` defaults to release.  "staging" and "nightly" are optional.
+  - `perfsonar_archive_auth_list` entries have `address`, `state`, and `user` subelements
 
 - Some other variables are defined at the end of `default/main.yml` and in `vars/main.yml`, but shouldn't need to be altered for a regular install.
 
