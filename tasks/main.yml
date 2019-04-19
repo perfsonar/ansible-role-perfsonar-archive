@@ -9,6 +9,6 @@
   tags: [ 'ps::config' ]
   include_tasks: esmond.yml
   loop: "{{ perfsonar_archiver_auth_list | default([]) }}"
-  loop control:
+  loop_control:
     loop_var: auth
   when: auth.address | default('') != ''
