@@ -6,7 +6,6 @@
 perfsonar_bundle: esmond
 perfsonar_optional_packages:
   - perfsonar-toolkit-compat-database
-  - esmond-database-postgresql95
 
 # List of perfSONAR services to check are running
 perfsonar_archive_services:
