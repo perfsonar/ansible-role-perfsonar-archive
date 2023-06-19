@@ -20,7 +20,7 @@ Role Variables
 
 The following variables can/should be defined for your host setup:
 
-  - `perfsonar_archive_auth_list` entries have `address`, `state`, and `user` subelements
+  - `perfsonar_archive_auth_list` entries have `address` and `state` subelements
 
 - Some other variables are defined at the end of `default/main.yml` and in `vars/main.yml`, but shouldn't need to be altered for a regular install.
 
@@ -29,9 +29,9 @@ Role Tags
 
 Some tags are used in the role, they are meant to run only or skip part of the process.  The following tags are existing:
 
-  - `ps::install` : only install perfSONAR packages and their dependencies
-  - `ps::config` : only config perfSONAR packages
-  - `ps::running` : running tasks
+  - `ps::install`: only install perfSONAR packages and their dependencies
+  - 'ps::config': only run tasks that configure perfSONAR and its services
+  - 'ps::running': only make sure perfSONAR services are up and running
 
 
 Dependencies

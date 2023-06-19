@@ -9,3 +9,7 @@ perfsonar_optional_packages:
 
 # List of perfSONAR services to check are running
 perfsonar_archive_services:
+  - "{{ apache_service }}"
+  - elmond
+  - logstash
+  - opensearch

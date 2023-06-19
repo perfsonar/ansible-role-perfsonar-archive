@@ -1,0 +1,7 @@
+# variables specific to Debian OS family
+---
+# Apache service
+apache_service: apache2
+
+# Location of the apache-logstash.conf file
+apache_logstash_conf: /etc/apache2/conf-enabled/apache-logstash.conf
